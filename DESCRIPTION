@@ -1,0 +1,22 @@
+Package: lbm
+Type: Package
+Title: Log binomial regression model in Exact method
+Version: 0.9.0.1
+Author: Chao Zhu
+Maintainer: Chao Zhu <chao.zhu@utas.edu.au>
+Description: Fit the log binomial regression model (LBM) by Exact method. Limited parameter space of 
+    LBM causes trouble to find admissible estimates and fail to converge when MLE is close to or on 
+    the boundary of space. Exact method utilizes the property of boundary vectors to re-parametrize 
+    the model without losing any information, and fits the model on the standard fitting algorithm 
+    with no convergence issues. 
+Depends: R (>= 3.5.0)
+Imports: 
+    stats (>= 3.5.0), 
+    utils (>= 3.5.0)
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Suggests: 
+    knitr
+VignetteBuilder: knitr
